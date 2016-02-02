@@ -1,0 +1,9 @@
+web:
+  container_name: ilivebox
+  build: node/
+  environment:
+    NODE_ENV: production
+  ports:
+    - 80:5000
+# TODO: add some duang.
+# nginx / redis / mongodb ...

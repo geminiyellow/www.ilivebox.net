@@ -1,0 +1,26 @@
+{
+  "name": "www.ilivebox.com",
+  "version": "1.0.0",
+  "description": "Life is like a box of chocolates.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilivebox/www.ilivebox.com.git"
+  },
+  "keywords": [
+    "ilivebox"
+  ],
+  "author": "geminiyellow <geminiyellow@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ilivebox/www.ilivebox.com/issues"
+  },
+  "homepage": "https://github.com/ilivebox/www.ilivebox.com#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
