@@ -1,3 +1,5 @@
+/node/typings
+/node/dist
 # Logs
 logs
 *.log
