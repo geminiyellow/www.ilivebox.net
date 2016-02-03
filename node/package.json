@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "typings install",
+    "build": "webpack --config './configs/webpack/webpack.config.js'",
+    "prestart": "npm run build",
     "start": "node server/index.js"
   },
   "repository": {
@@ -25,5 +28,13 @@
     "errorhandler": "^1.4.3",
     "express": "^4.13.4",
     "morgan": "^1.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.8.1",
+    "rimraf": "^2.5.1",
+    "ts-loader": "^0.8.0",
+    "typescript": "^1.7.5",
+    "webpack": "^1.12.12",
+    "webpack-merge": "^0.7.3"
   }
 }
