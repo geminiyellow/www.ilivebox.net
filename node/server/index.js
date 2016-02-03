@@ -6,15 +6,17 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 var express = require('express');
 var config = require('./configs');
 
+// Setup server
 var app = express();
+var http = require('http');
 
-// TODO: for DEMO.
-app.get('/', function (req, res) {
-  console.log(req);
-  res.send('Hello World!');
-});
+// Express configuration
+require('./configs/express')(app);
+// Route configuration
+require('./routes')(app);
 
-app.listen(config.port, function () {
+// Start server
+http.createServer(app).listen(config.port, function () {
   console.log('Express server listening on %d, in %s mode', config.port, app.get('env'));
 });
 
