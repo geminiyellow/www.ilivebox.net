@@ -1,14 +1,15 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
     "target": "es5",
     "module": "commonjs",
-    "removeComments": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true
   },
   "exclude": [
     "node_modules",
-    "typings"
+    "typings/main.d.ts",
+    "typings/main"
   ]
 }
