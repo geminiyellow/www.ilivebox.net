@@ -13,8 +13,8 @@ WORKDIR /usr/src/ilivebox
 
 # Install dependencies
 RUN \
-    npm install -g typescript typings webpack nodemon && \
-    npm install
+    npm install -g typescript tsd typings webpack nodemon && \
+    npm install --silen
 
 # TODO: add some duang.
 # npm install -g npm && \
