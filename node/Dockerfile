@@ -3,13 +3,13 @@ FROM node:latest
 MAINTAINER geminiyellow<geminiyellow@gmail.com>
 
 # Prepare ilivebox directory
-RUN mkdir -p /usr/src/ilivebox
+RUN mkdir -p /app/user
 
 # Put all our code inside that directory that lives in the container
-ADD . /usr/src/ilivebox
+ADD . /app/user
 
 # Set in what directory commands will run
-WORKDIR /usr/src/ilivebox
+WORKDIR /app/user
 
 # Install dependencies
 RUN \
