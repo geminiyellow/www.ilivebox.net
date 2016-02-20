@@ -1,0 +1,6 @@
+{
+  "name": "www.ilivebox.com",
+  "description": "Life is like a box of chocolates.",
+  "image": "node:latest",
+  "addons": []
+}
