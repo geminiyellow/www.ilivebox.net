@@ -13,13 +13,8 @@ WORKDIR /usr/src/ilivebox
 
 # Install dependencies
 RUN \
-    npm install -g typescript tsd typings webpack nodemon && \
-    npm install --silen
-
-# TODO: add some duang.
-# npm install -g npm && \
-# npm build
-# & webpack tsd typescript
+    npm install -s -g typescript tsd typings webpack nodemon && \
+    npm install -s --unsafe-perm
 
 # Tell Docker we are going to use this port
 EXPOSE 5000
